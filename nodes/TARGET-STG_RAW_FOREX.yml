@@ -1,0 +1,228 @@
+fileVersion: 1
+id: a4fbaabf-0495-4f20-8397-503235f6a351
+name: STG_RAW_FOREX
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 232f92d5-f8a2-4b92-8923-d2e6d0b12c69
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: meta_currency_base
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"RAW_FOREX\".\"CONTENT\":\"meta\".\"currency_base\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbec39d6-a0f7-4d7a-ab3c-28aa704eab21
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: meta_currency_quote
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"RAW_FOREX\".\"CONTENT\":\"meta\".\"currency_quote\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01a89e27-2546-457f-9585-349464987586
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: meta_interval
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"RAW_FOREX\".\"CONTENT\":\"meta\".\"interval\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c37e8f1-7157-45e7-be9e-a058b8680a99
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: meta_symbol
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"RAW_FOREX\".\"CONTENT\":\"meta\".\"symbol\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c9b39ad-aeb7-46e0-8c02-6b835fae367d
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: meta_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"RAW_FOREX\".\"CONTENT\":\"meta\".\"type\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55681220-0e13-4e9a-ade3-39c97e3d354f
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: status
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"RAW_FOREX\".\"CONTENT\":\"status\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6511813f-a40e-45e9-acd3-20505145c9d8
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: values_close
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"CONTENT_values\".value:\"close\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eacad170-c755-4db2-a494-492c783016dd
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: values_datetime
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"CONTENT_values\".value:\"datetime\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a4b4e70-4b4c-4862-bce7-d474fd869064
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: values_high
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"CONTENT_values\".value:\"high\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8aab7e01-5dcf-41e9-9cfc-092a88926aae
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: values_low
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"CONTENT_values\".value:\"low\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 036e2f2f-ebf4-4634-9ef2-38036f6dfdbb
+          stepCounter: a4fbaabf-0495-4f20-8397-503235f6a351
+        config: {}
+        dataType: STRING
+        description: ""
+        name: values_open
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 925a7b4e-ccb8-4d76-8c94-9a0963b0665f
+                stepCounter: 5d54b946-573f-4ffa-9c88-539fd1f6f7f4
+            transform: "\"CONTENT_values\".value:\"open\"::STRING"
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: RAW_FOREX
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'RAW_FOREX') }} "RAW_FOREX", 
+            lateral flatten(input => "CONTENT":"values", OUTER => TRUE) "CONTENT_values"
+        name: STG_RAW_FOREX
+        noLinkRefs: []
+  name: STG_RAW_FOREX
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
