@@ -1,0 +1,96 @@
+fileVersion: 1
+id: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
+name: RAW_CRYPTO
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TARGET
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d3d5dd6-dc97-4723-a9a8-a4a7203eb508
+          stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: CONTENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41d41214-e4cc-4222-9f84-3dc1d072b1f8
+          stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: METADATA_FILENAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca6d812c-a0a7-480e-8755-91f71b8a3000
+          stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: METADATA_FILE_ROW_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0bf7dbc-6846-40cf-a1d7-daf464244bdd
+          stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: _INGESTED_AT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('TARGET', 'RAW_CRYPTO') }}
+  name: RAW_CRYPTO
+  schema: ""
+  sqlType: Source
+  table: RAW_CRYPTO
+  type: sourceInput
+  version: 1
+type: Node

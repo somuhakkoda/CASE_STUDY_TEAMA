@@ -1,0 +1,96 @@
+fileVersion: 1
+id: d56a52e3-00ed-462d-b197-88c146506e4a
+name: RAW_ETFS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TARGET
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eabdd416-0b72-4291-9960-9ea39294d440
+          stepCounter: d56a52e3-00ed-462d-b197-88c146506e4a
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: CONTENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e645996-647f-4da3-91b6-af0989eae09e
+          stepCounter: d56a52e3-00ed-462d-b197-88c146506e4a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: METADATA_FILENAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01913354-6270-48e2-8062-069752a9a4de
+          stepCounter: d56a52e3-00ed-462d-b197-88c146506e4a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: METADATA_FILE_ROW_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 318f8ddf-3b2f-42b3-bd6b-6d64ec5d182c
+          stepCounter: d56a52e3-00ed-462d-b197-88c146506e4a
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: _INGESTED_AT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('TARGET', 'RAW_ETFS') }}
+  name: RAW_ETFS
+  schema: ""
+  sqlType: Source
+  table: RAW_ETFS
+  type: sourceInput
+  version: 1
+type: Node
