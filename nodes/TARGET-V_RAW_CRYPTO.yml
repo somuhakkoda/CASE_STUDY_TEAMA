@@ -1,13 +1,14 @@
 fileVersion: 1
-id: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
-name: STG_RAW_CRYPTO
+id: db6364fa-7882-4a84-aa8c-556144bf7944
+name: V_RAW_CRYPTO
 operation:
   config:
-    insertStrategy: INSERT
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
-    truncateBefore: true
+    insertStrategy: UNION
+    postSQL: null
+    preSQL: null
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: false
   database: ""
   deployEnabled: true
   description: ""
@@ -22,8 +23,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 4b2cb43a-3adb-4daf-89db-5e192a516ebd
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: 7e78f9b1-b9c5-47bc-b596-e7237b44b006
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -39,8 +40,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 36477088-cbb8-430c-ba16-7ce1bbbff45c
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: 10930d1d-4981-4ac9-a21f-39f632e1abed
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -56,8 +57,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: cdf39491-3a1d-432a-b1bc-c6f5540c3938
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: 09016634-5816-44e5-9f14-69a8be94ecd8
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -73,8 +74,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: f46bbe5a-f322-4859-8f02-6c8e37a55a7a
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: cbcea9e1-e155-4590-87b5-c28ba13788c2
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -90,8 +91,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 8f4448de-2141-4615-be8b-3430ea1224da
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: f122bda4-e105-4cf5-978d-637259a02840
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -107,8 +108,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 59eb3aae-c96b-4df3-bc9e-b6f594539a25
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: ef93f14c-6021-4b43-bcea-ae279b568ddb
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -124,8 +125,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: bbf08e94-a55f-4c1a-82cd-e8e64fe4cfb2
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: e4116e71-d1e0-44cc-beba-dd3902ac71f5
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -141,8 +142,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: bc8b5094-3eb5-40a1-a7bb-56ac0754bee1
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: c5f16209-6dfc-4dc8-abf3-5ca3ef9bac17
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -152,14 +153,14 @@ operation:
           - columnReferences:
               - columnCounter: 9d3d5dd6-dc97-4723-a9a8-a4a7203eb508
                 stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
-            transform: "\"CONTENT_values\".value:\"close\"::STRING"
+            transform: "\"CONTENT_values\".value:\"close\"::DOUBLE"
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 3cf81d07-eef3-479b-9460-def80d8aa18f
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: 1ec53e0d-9b32-435e-8b1b-77315b543175
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -169,14 +170,14 @@ operation:
           - columnReferences:
               - columnCounter: 9d3d5dd6-dc97-4723-a9a8-a4a7203eb508
                 stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
-            transform: "\"CONTENT_values\".value:\"datetime\"::STRING"
+            transform: "\"CONTENT_values\".value:\"datetime\"::TIMESTAMP"
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: fa64042e-c7da-4ba2-a6f2-883e1eb728c1
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: 17ae789e-2a1a-42ec-8f07-a91815d18afe
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -186,14 +187,14 @@ operation:
           - columnReferences:
               - columnCounter: 9d3d5dd6-dc97-4723-a9a8-a4a7203eb508
                 stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
-            transform: "\"CONTENT_values\".value:\"high\"::STRING"
+            transform: "\"CONTENT_values\".value:\"high\"::DOUBLE"
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a6e9a804-e43a-47ac-93a9-7dd2888b5c4f
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: ef04adb1-1350-447b-acdb-1a80c6996d90
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -203,14 +204,14 @@ operation:
           - columnReferences:
               - columnCounter: 9d3d5dd6-dc97-4723-a9a8-a4a7203eb508
                 stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
-            transform: "\"CONTENT_values\".value:\"low\"::STRING"
+            transform: "\"CONTENT_values\".value:\"low\"::DOUBLE"
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c0eff54e-a790-4276-a570-0f92504bbfff
-          stepCounter: ce077e3e-07fd-4063-ba7a-3b9fc133ebe8
+          columnCounter: 151078ef-226e-4251-8cd5-54d8a113ccf1
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
@@ -220,27 +221,71 @@ operation:
           - columnReferences:
               - columnCounter: 9d3d5dd6-dc97-4723-a9a8-a4a7203eb508
                 stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
-            transform: "\"CONTENT_values\".value:\"open\"::STRING"
+            transform: "\"CONTENT_values\".value:\"open\"::DOUBLE"
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
           RAW_CRYPTO: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
         customSQL:
-          customSQL: ""
+          customSQL: |+
+            CREATE OR REPLACE VIEW "CASE_STUDY_TEAMA"."RAW"."V_RAW_CRYPTO" (
+              "meta_currency_base",
+              "meta_currency_quote",
+              "meta_exchange",
+              "meta_interval",
+              "meta_symbol",
+              "meta_type",
+              "status",
+              "values_close",
+              "values_datetime",
+              "values_high",
+              "values_low",
+              "values_open"
+            ) AS
+            SELECT
+              "RAW_CRYPTO"."CONTENT":"meta"."currency_base"::STRING AS "meta_currency_base",
+              "RAW_CRYPTO"."CONTENT":"meta"."currency_quote"::STRING AS "meta_currency_quote",
+              "RAW_CRYPTO"."CONTENT":"meta"."exchange"::STRING AS "meta_exchange",
+              "RAW_CRYPTO"."CONTENT":"meta"."interval"::STRING AS "meta_interval",
+              "RAW_CRYPTO"."CONTENT":"meta"."symbol"::STRING AS "meta_symbol",
+              "RAW_CRYPTO"."CONTENT":"meta"."type"::STRING AS "meta_type",
+              "RAW_CRYPTO"."CONTENT":"status"::STRING AS "status",
+              "CONTENT_values".value:"close"::DOUBLE AS "values_close",
+              "CONTENT_values".value:"datetime"::TIMESTAMP AS "values_datetime",
+              "CONTENT_values".value:"high"::DOUBLE AS "values_high",
+              "CONTENT_values".value:"low"::DOUBLE AS "values_low",
+              "CONTENT_values".value:"open"::DOUBLE AS "values_open"
+            FROM
+              "CASE_STUDY_TEAMA"."RAW"."RAW_CRYPTO" "RAW_CRYPTO",
+              lateral flatten(input => "CONTENT":"values", OUTER => TRUE) "CONTENT_values"
+
         dependencies:
           - locationName: TARGET
             nodeName: RAW_CRYPTO
         join:
           joinCondition: |-
-            FROM {{ ref('TARGET', 'RAW_CRYPTO') }} , 
+            FROM {{ ref('TARGET', 'RAW_CRYPTO') }} "RAW_CRYPTO", 
             lateral flatten(input => "CONTENT":"values", OUTER => TRUE) "CONTENT_values"
-        name: STG_RAW_CRYPTO
+            WHERE
+              "RAW_CRYPTO"."CONTENT":"meta"."currency_base" IS NOT NULL
+              AND "RAW_CRYPTO"."CONTENT":"meta"."currency_quote" IS NOT NULL
+              AND "RAW_CRYPTO"."CONTENT":"meta"."exchange" IS NOT NULL
+              AND "RAW_CRYPTO"."CONTENT":"meta"."interval" IS NOT NULL
+              AND "RAW_CRYPTO"."CONTENT":"meta"."symbol" IS NOT NULL
+              AND "RAW_CRYPTO"."CONTENT":"meta"."type" IS NOT NULL
+              AND "RAW_CRYPTO"."CONTENT":"status" IS NOT NULL
+              AND "CONTENT_values".value:"close" IS NOT NULL
+              AND "CONTENT_values".value:"datetime" IS NOT NULL
+              AND "CONTENT_values".value:"high" IS NOT NULL
+              AND "CONTENT_values".value:"low" IS NOT NULL
+              AND "CONTENT_values".value:"open" IS NOT NULL;
+        name: V_RAW_CRYPTO
         noLinkRefs: []
-  name: STG_RAW_CRYPTO
+  name: V_RAW_CRYPTO
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: View
   type: sql
   version: 1
 type: Node
