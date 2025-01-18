@@ -1,0 +1,201 @@
+fileVersion: 1
+id: 2132be97-25e9-4ea0-89a5-c1e964af6894
+name: DIM_SYMBOL
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: GOLD
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04a6afd4-07c2-4091-a05c-cf76148aa580
+          stepCounter: 2132be97-25e9-4ea0-89a5-c1e964af6894
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: asset_type
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9519bd04-51f1-4668-b765-bcead1828b8c
+          stepCounter: 2132be97-25e9-4ea0-89a5-c1e964af6894
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: currency
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28b0f679-8348-44ce-8b7f-842befcd62b7
+          stepCounter: 2132be97-25e9-4ea0-89a5-c1e964af6894
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: currency_base
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff394cb3-2b46-4f5d-a526-4a99ee66bc01
+          stepCounter: 2132be97-25e9-4ea0-89a5-c1e964af6894
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: currency_quote
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb36deee-53e2-4384-9a0c-68c44630bfe7
+          stepCounter: 2132be97-25e9-4ea0-89a5-c1e964af6894
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: symbol
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53e0c482-e01f-4764-9bff-b6c0e4c11d2b
+          stepCounter: 2132be97-25e9-4ea0-89a5-c1e964af6894
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: exchange_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb22f38d-81ca-49a2-bf92-1d0f693acefe
+          stepCounter: 2132be97-25e9-4ea0-89a5-c1e964af6894
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: exchange_timezone
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fab56a6f-9dad-45d5-ba8b-f2a33d522cb5
+          stepCounter: 2132be97-25e9-4ea0-89a5-c1e964af6894
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: mic_code
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: |-
+            {{ stage('Override Create SQL') }}
+            	CREATE OR REPLACE VIEW {{ ref('GOLD', 'DIM_SYMBOL')}} AS (
+            		select "asset_type","currency","currency_base","currency_quote","symbol","exchange_name","exchange_timezone","mic_code" from "CASE_STUDY_TEAMA"."GOLD"."V_TRANSACTIONS"
+            group by
+            "asset_type",
+            "currency",
+            "currency_base",
+            "currency_quote",
+            "symbol",
+            "exchange_name",
+            "exchange_timezone",
+            "mic_code"
+            	)
+        dependencies:
+          - locationName: GOLD
+            nodeName: V_TRANSACTIONS
+        join:
+          joinCondition: FROM {{ ref('GOLD', 'V_TRANSACTIONS') }} "V_TRANSACTIONS"
+        name: DIM_SYMBOL
+        noLinkRefs: []
+  name: DIM_SYMBOL
+  overrideSQL: true
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

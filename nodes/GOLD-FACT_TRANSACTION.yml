@@ -1,0 +1,48 @@
+fileVersion: 1
+id: 18a244a2-8610-4256-8199-ee943eb92b4f
+name: FACT_TRANSACTION
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: GOLD
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns: []
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: |-
+            {{ stage('Override Create SQL') }}
+            	CREATE OR REPLACE VIEW {{ ref('GOLD', 'FACT_TRANSACTION')}} AS (
+            		SELECT 
+            		"date_transaction",
+            		"symbol",
+            		"close_price",
+            		"open_price",
+            		"high_price",
+            		"low_price",
+            		"trade_volume"
+            		from "CASE_STUDY_TEAMA"."GOLD"."V_TRANSACTIONS"
+            	)
+        dependencies:
+          - locationName: GOLD
+            nodeName: V_TRANSACTIONS
+        join:
+          joinCondition: FROM {{ ref('GOLD', 'V_TRANSACTIONS') }} "V_TRANSACTIONS"
+        name: FACT_TRANSACTION
+        noLinkRefs: []
+  name: FACT_TRANSACTION
+  overrideSQL: true
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,388 @@
+fileVersion: 1
+id: be0f8b52-e53b-40e7-9a19-d11193de2864
+name: V_TRANSACTIONS
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: GOLD
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a5b0de9-222a-4f74-b374-984b0843c7c7
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: date_transaction
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab437b5e-07cd-4d3e-bec7-afb411c03d15
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: asset_type
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ec9f48f-e5b5-4f97-86f8-649a409846c5
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: currency
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20882276-87e9-45d3-927b-4984f585ed7a
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: currency_base
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4375e230-ac61-40b3-8807-f492a7267b35
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: currency_quote
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e718b5e-b3e3-4924-aaf1-d71271bc33db
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: exchange_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c9ae0318-f234-44bc-ae10-5766f875ede2
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: exchange_timezone
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2dc7e8e-ff4f-4613-85ce-08741a217f5d
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: mic_code
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: deb3948d-1296-488a-98c2-198e18d39a8f
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: symbol
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1eda61e7-159b-4b4c-b7bd-569514a769d3
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: close_price
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36eef791-27fa-43de-86e3-09a218925476
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: open_price
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db744d22-3f6d-41f1-9c3e-ff608f79f1bd
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: high_price
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8fe2ec6a-c956-4312-8794-b0d83c4bb914
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: low_price
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a333909-fd38-4be6-88d6-81af84913afb
+          stepCounter: be0f8b52-e53b-40e7-9a19-d11193de2864
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: trade_volume
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: |+
+            {{ stage('Override Create SQL') }}
+            CREATE OR REPLACE VIEW "CASE_STUDY_TEAMA"."GOLD"."V_TRANSACTIONS" AS
+            SELECT 
+                "V_RAW_CRYPTO"."date_transaction" AS "date_transaction",
+                "V_RAW_CRYPTO"."asset_type" AS "asset_type",
+                "V_RAW_CRYPTO"."currency" AS "currency",
+                NULL AS "currency_base",
+                NULL AS "currency_quote",
+                "V_RAW_CRYPTO"."exchange_name" AS "exchange_name",
+                NULL AS "exchange_timezone",
+                NULL AS "mic_code",
+                "V_RAW_CRYPTO"."symbol" AS "symbol",
+                "V_RAW_CRYPTO"."close_price" AS "close_price",
+                "V_RAW_CRYPTO"."open_price" AS "open_price",
+                "V_RAW_CRYPTO"."high_price" AS "high_price",
+                "V_RAW_CRYPTO"."low_price" AS "low_price",
+                NULL AS "trade_volume"
+            FROM "CASE_STUDY_TEAMA"."RAW"."V_RAW_CRYPTO" "V_RAW_CRYPTO"
+
+            UNION ALL
+
+            SELECT
+                "V_RAW_FOREX"."date_transaction" AS "date_transaction",
+                "V_RAW_FOREX"."asset_type" AS "asset_type",
+                "V_RAW_FOREX"."currency" AS "currency",
+                "V_RAW_FOREX"."currency_base" AS "currency_base",    
+                "V_RAW_FOREX"."currency_qoute" AS "currency_quote",    
+                NULL AS "exchange_name",
+                NULL AS "exchange_timezone",  
+                NULL AS "mic_code",  
+                "V_RAW_FOREX"."symbol" AS "symbol",
+                "V_RAW_FOREX"."close_price" AS "close_price",
+                "V_RAW_FOREX"."open_price" AS "open_price",
+                "V_RAW_FOREX"."high_price" AS "high_price",
+                "V_RAW_FOREX"."low_price" AS "low_price",
+                NULL AS "trade_volume"
+            FROM "CASE_STUDY_TEAMA"."RAW"."V_RAW_FOREX" "V_RAW_FOREX"
+            UNION ALL
+            SELECT
+                "V_RAW_ETFS"."date_transaction" AS "date_transaction",
+                "V_RAW_ETFS"."asset_type" AS "asset_type",
+                "V_RAW_ETFS"."currency" AS "currency",
+                NULL AS "currency_base",    
+                NULL AS "currency_quote",    
+                "V_RAW_ETFS"."exchange_name" AS "exchange_name",
+                "V_RAW_ETFS"."exchange_timezone" AS "exchange_timezone",  
+                "V_RAW_ETFS"."mic_code" AS "mic_code",
+                "V_RAW_ETFS"."symbol" AS "symbol",
+                "V_RAW_ETFS"."close_price" AS "close_price",
+                "V_RAW_ETFS"."open_price" AS "open_price",
+                "V_RAW_ETFS"."high_price" AS "high_price",
+                "V_RAW_ETFS"."low_price" AS "low_price",
+                "V_RAW_ETFS"."trade_volume" AS "trade_volume"
+            FROM "CASE_STUDY_TEAMA"."RAW"."V_RAW_ETFS" "V_RAW_ETFS"
+            UNION ALL
+            SELECT 
+                "V_RAW_STOCKS"."date_transaction" AS "date_transaction",
+                "V_RAW_STOCKS"."asset_type" AS "asset_type",
+                "V_RAW_STOCKS"."currency" AS "currency",
+                NULL AS "currency_base",    
+                NULL AS "currency_quote",    
+                "V_RAW_STOCKS"."exchange_name" AS "exchange_name",
+                "V_RAW_STOCKS"."exchange_timezone" AS "exchange_timezone",  
+                "V_RAW_STOCKS"."mic_code" AS "mic_code",  
+                "V_RAW_STOCKS"."symbol" AS "symbol",
+                "V_RAW_STOCKS"."close_price" AS "close_price",
+                "V_RAW_STOCKS"."open_price" AS "open_price",
+                "V_RAW_STOCKS"."high_price" AS "high_price",
+                "V_RAW_STOCKS"."low_price" AS "low_price",
+                "V_RAW_STOCKS"."trade_volume" AS "trade_volume"
+            FROM 
+                "CASE_STUDY_TEAMA"."RAW"."V_RAW_STOCKS" "V_RAW_STOCKS";
+
+        dependencies:
+          - locationName: TARGET
+            nodeName: V_RAW_CRYPTO
+          - locationName: TARGET
+            nodeName: V_RAW_ETFS
+          - locationName: TARGET
+            nodeName: V_RAW_FOREX
+          - locationName: TARGET
+            nodeName: V_RAW_STOCKS
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'V_RAW_ETFS') }} "V_RAW_ETFS"
+            INNER JOIN {{ ref('TARGET', 'V_RAW_STOCKS') }} "V_RAW_STOCKS"
+            ON "V_RAW_ETFS"./*COLUMN*/ = "V_RAW_STOCKS"./*COLUMN*/
+            INNER JOIN {{ ref('TARGET', 'V_RAW_FOREX') }} "V_RAW_FOREX"
+            ON "V_RAW_ETFS"./*COLUMN*/ = "V_RAW_FOREX"./*COLUMN*/
+            INNER JOIN {{ ref('TARGET', 'V_RAW_CRYPTO') }} "V_RAW_CRYPTO"
+            ON "V_RAW_ETFS"./*COLUMN*/ = "V_RAW_CRYPTO"./*COLUMN*/
+        name: V_TRANSACTIONS
+        noLinkRefs: []
+  name: V_TRANSACTIONS
+  overrideSQL: true
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

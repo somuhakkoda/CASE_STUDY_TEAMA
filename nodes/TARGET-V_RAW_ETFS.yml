@@ -19,12 +19,32 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
+          columnCounter: 589c3146-32ed-47dc-aff8-08dad6ae55ce
+          stepCounter: 2000189e-e9fc-412b-b97a-f246b8ff2196
+        config: {}
+        dataType: ""
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: asset_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'ETFS'::STRING"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
           columnCounter: 38f5fbca-2437-4551-90fe-4d6ba3a4ea47
           stepCounter: 2000189e-e9fc-412b-b97a-f246b8ff2196
         config: {}
         dataType: STRING
         description: ""
-        name: meta_currency
+        name: currency
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -41,7 +61,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_exchange
+        name: exchange_name
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -58,7 +78,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_exchange_timezone
+        name: exchange_timezone
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -92,7 +112,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_mic_code
+        name: mic_code
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -109,7 +129,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_symbol
+        name: symbol
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -160,7 +180,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_close
+        name: close_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -177,7 +197,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_datetime
+        name: date_transaction
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -194,7 +214,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_high
+        name: high_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -211,7 +231,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_low
+        name: low_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -228,7 +248,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_open
+        name: open_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -245,7 +265,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_volume
+        name: trade_volume
         nullable: true
         sourceColumnReferences:
           - columnReferences:
