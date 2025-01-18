@@ -23,12 +23,32 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
+          columnCounter: 048dbe55-775e-4f8d-ab50-4171481f1520
+          stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
+        config: {}
+        dataType: ""
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: asset_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'CRYPTO'::STRING"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
           columnCounter: 7e78f9b1-b9c5-47bc-b596-e7237b44b006
           stepCounter: db6364fa-7882-4a84-aa8c-556144bf7944
         config: {}
         dataType: STRING
         description: ""
-        name: meta_currency_base
+        name: name
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -45,7 +65,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_currency_quote
+        name: currency
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -62,7 +82,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_exchange
+        name: exchange_name
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -96,13 +116,13 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_symbol
+        name: symbol
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 9d3d5dd6-dc97-4723-a9a8-a4a7203eb508
                 stepCounter: 071a23d4-09db-4e2a-bd52-50b4d5d3e31d
-            transform: "\"RAW_CRYPTO\".\"CONTENT\":\"meta\".\"symbol\"::STRING"
+            transform: SPLIT_PART("RAW_CRYPTO"."CONTENT":"meta"."symbol"::STRING, '/', 1)::STRING
       - acceptedValues:
           strictMatch: true
           values: []
@@ -147,7 +167,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_close
+        name: close_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -164,7 +184,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_datetime
+        name: date_transaction
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -181,7 +201,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_high
+        name: high_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -198,7 +218,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_low
+        name: low_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -215,7 +235,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_open
+        name: open_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:

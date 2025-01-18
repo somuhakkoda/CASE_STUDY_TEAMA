@@ -19,12 +19,52 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
+          columnCounter: 9cd72b8c-24bb-484d-8a54-880a8433d866
+          stepCounter: 197398fd-e620-4181-915c-fc3aea4ddd18
+        config: {}
+        dataType: ""
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: asset_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'FOREX'::STRING"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7aad1530-44cb-421a-a0d1-91abf78a9fa3
+          stepCounter: 197398fd-e620-4181-915c-fc3aea4ddd18
+        config: {}
+        dataType: ""
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: currency
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "\"RAW_FOREX\".\"CONTENT\":\"meta\".\"currency_quote\"::STRING"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
           columnCounter: 8f02a9dd-d9f5-401b-a9f5-2e34193d1bc8
           stepCounter: 197398fd-e620-4181-915c-fc3aea4ddd18
         config: {}
         dataType: STRING
         description: ""
-        name: meta_currency_base
+        name: currency_base
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -41,7 +81,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_currency_quote
+        name: currency_qoute
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -75,7 +115,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: meta_symbol
+        name: symbol
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -126,7 +166,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_close
+        name: close_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -143,7 +183,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_datetime
+        name: date_transaction
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -160,7 +200,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_high
+        name: high_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -177,7 +217,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_low
+        name: low_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -194,7 +234,7 @@ operation:
         config: {}
         dataType: STRING
         description: ""
-        name: values_open
+        name: open_price
         nullable: true
         sourceColumnReferences:
           - columnReferences:
