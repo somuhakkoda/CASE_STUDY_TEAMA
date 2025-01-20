@@ -1,0 +1,270 @@
+fileVersion: 1
+id: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+name: DIM_DATE
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: GOLD
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b243410-03f4-4ef6-867f-3762d0921472
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: date_transaction
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f85c180b-de5d-454a-938c-3f49a25c9dbe
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: NUMBER(2,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: day_of_month
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d49795a7-c401-41d9-b45d-460c96bdf943
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: day_of_week
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 979666fa-8337-4a36-8c2c-32ccd34bdef6
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: NUMBER(4,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: day_of_year
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f83fedc8-6345-4d8a-ab25-e0761a50880c
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: month_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24a0583a-2e6f-4fef-af7e-7cd1acf7a920
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: NUMBER(2,0)
+        defaultValue: ""
+        description: ""
+        name: month_num
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28a03d92-f690-4013-9059-06db1822bd3e
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: quarter_num
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b8a8585-5fe6-4975-8db1-db564c75abc5
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: year_month
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdf9a5e6-de75-47db-a8c4-4848d435d949
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: NUMBER(4,0)
+        defaultValue: ""
+        description: ""
+        name: year_num
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea6f431e-9a96-448d-86f3-5771605fcb56
+          stepCounter: 4de7f94d-2b4e-41ee-964f-09de598d9d8f
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: year_quarter
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: |-
+            {{ stage('Override Create SQL') }}
+            	CREATE OR REPLACE VIEW {{ ref('GOLD', 'DIM_DATE')}} AS (
+            		SELECT 
+                DISTINCT 
+                "date_transaction",
+
+                DAY("date_transaction") AS "day_of_month",
+
+                TO_CHAR("date_transaction",'DY') AS "day_of_week", 
+
+                DAYOFYEAR("date_transaction") AS "day_of_year",
+
+                TO_CHAR("date_transaction", 'MMMM') AS "month_name",  
+
+                MONTH("date_transaction") AS "month_num",
+
+                CASE 
+                    WHEN MONTH("date_transaction") IN (1, 2, 3, 4) THEN 'Q1'
+                    WHEN MONTH("date_transaction") IN (5, 6, 7, 8) THEN 'Q2'
+                    WHEN MONTH("date_transaction") IN (9, 10, 11, 12) THEN 'Q3'
+                END AS "quarter_num",
+
+                TO_CHAR("date_transaction", 'YYYY-MM') AS "year_month",
+
+                YEAR("date_transaction") AS "year_num",
+
+                TO_CHAR("date_transaction", 'YYYY') || '-Q' || 
+                CASE 
+                    WHEN MONTH("date_transaction") IN (1, 2, 3) THEN '1'
+                    WHEN MONTH("date_transaction") IN (4, 5, 6) THEN '2'
+                    WHEN MONTH("date_transaction") IN (7, 8, 9) THEN '3'
+                    WHEN MONTH("date_transaction") IN (10, 11, 12) THEN '4'
+                END AS "year_quarter"
+
+            FROM 
+                "CASE_STUDY_TEAMA"."GOLD"."V_TRANSACTIONS"
+
+            	)
+        dependencies:
+          - locationName: GOLD
+            nodeName: V_TRANSACTIONS
+        join:
+          joinCondition: FROM {{ ref('GOLD', 'V_TRANSACTIONS') }} "V_TRANSACTIONS"
+        name: DIM_DATE
+        noLinkRefs: []
+  name: DIM_DATE
+  overrideSQL: true
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
